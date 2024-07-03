@@ -1,5 +1,5 @@
-# Official JSopX™ Class Library Asp.NET Core OpenX Project 
-### from the jSilvestri.com BETA v 2024 JSopX™ OpenX Collection Project
+# JSopX™ Class Library Asp.NET Core OpenX Project
+### from the ﻿jSilvestri.com BETA v 2024 JSopX™ OpenX Demo Collection Project
 ### Phase 1
 The `JSopX.ClassLibrary` application (i.e., jSilvestri.com BETA v 2024 JSopX™ Class Library) in specific, is a FREE, open-source, custom, reusable, jSilvestri.com BETA v 2024 JSopX™ Open Demo Collections ASP.NET Core 8 Class Library, designed to hold common constants, enums, and helper classes that can be shared across multiple projects. 
 

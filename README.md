@@ -11,7 +11,94 @@ The `JSopX.ClassLibrary` application (i.e., jSilvestri.com BETA v 2024 JSopX™ 
 
 Many applications in the `Custom jSilvestri.com BETA v 2024 JSopX™ Open Demo Collection`, such as the `Angular Web API Demo`, `Blazor Web API Demo`, `React Web API Demo`, and `Vue Web API Demo` applications will use this project to reference common features throughout the collective applications.
 
+### Prerequisites
+
+The JSopX™ OpenX `JSopX.ClassLibrary`Project requires at least the following technologies to run as expected.
+
+- [jSilvestri.com BETA v 2024 JSopX™ OpenX Collection Project](https://github.com/JasonSilvestri/JSopX.OpenXDemoCollection)
+- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+- [ASP.NET Core 8 Documentation](https://learn.microsoft.com/en-us/aspnet/core/)
+- [Visual Studio or Visual Studio Code 2022 (v 17.10.3) or higher](https://visualstudio.microsoft.com/)
+ 
+
+### Corequisites
+
+Just about every project from the [jSilvestri.com BETA v 2024 JSopX™ OpenX Collection Project](https://github.com/JasonSilvestri/JSopX.OpenXDemoCollection) uses this `JSopX.ClassLibrary` Project. 
+
+If you plan to really jump into all projects, please, by all means! It is what they are here for! Conversely, to ensure all apps run as expected, you will need to know some of the following technologies:
+
+- [ASP.NET Core 8 Documentation](https://learn.microsoft.com/en-us/aspnet/core/)
+- [.NET Core Blazor 8 Documentation](https://learn.microsoft.com/en-us/aspnet/core/blazor/)
+- [.NET Core MAUI 8 Documentation](https://learn.microsoft.com/en-us/dotnet/maui/)
+- [Angular CLI 18.0.3 Documentation](https://angular.io/cli)
+- [React 18.2.0 Documentation](https://reactjs.org/docs/getting-started.html)
+- [Vue 3.4.21 Documentation](https://vuejs.org/guide/introduction.html)
+- [Vite 5.2.8 Documentation](https://vitejs.dev/)
+- [Node 20.14.0 Documentation](https://nodejs.org/en/docs/)
+- [npm 10.8.1 Documentation](https://docs.npmjs.com/)
+
+### Reading Not For You?
+
+#### Check Installed Versions
+
+If you have no interest in learning technologies from above - I totally get! However, you should at least check your machine to know if you have the above technologies or higher in order for the project to work as expected
+
+- **ASP.NET Core 8:**
+
+    ```bash
+    dotnet --version
+    ```
+
+- **.NET Core Blazor 8:**
+
+    ```bash
+    dotnet --list-sdks
+    ```
+
+- **.NET Core MAUI 8:**
+
+    ```bash
+    dotnet --list-sdks
+    ```
+
+- **Angular CLI: 18.0.3**
+
+    ```bash
+    ng version
+    ```
+
+- **React 18.2.0**
+
+    ```bash
+    npm list react
+    ```
+
+- **Vue 3.4.21**
+
+    ```bash
+    npm list vue
+    ```
+
+- **Vite 5.2.8**
+
+    ```bash
+    npm list vite
+    ```
+
+- **Node 20.14.0**
+
+    ```bash
+    node -v
+    ```
+
+- **npm 10.8.1**
+
+    ```bash
+    npm -v
+    ```
+
 ## VS Project & Solution Structure
+The JSopX™ OpenX `JSopX.ClassLibrary` class library, is a shared library, and one of serveral projects that make up all apps in the [Official jSilvestri.com BETA v 2024 JSopX™ OpenX Collection Project](https://github.com/JasonSilvestri/JSopX.OpenXDemoCollection). It is worth just skimming through them below if you have a sec.
 
 **The solution includes the following projects:**
 
@@ -62,12 +149,6 @@ The project is organized into the following structure:
 
 ## Getting Started
 
-### Prerequisites
-
-- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
-- [Visual Studio 2022 or higher](https://visualstudio.microsoft.com/)
-- [Visit jSilvestri.com BETA v 2024 Demos for More Details](https://jsilvestri.com/home/demo)
-  
 ### Installation
 
 1. **Clone the repository**:
@@ -116,13 +197,886 @@ public class ExampleService
 }
 ```
 
+---
+
+## Using Shared Resources in Client Projects
+
+### Reference the Shared Resources Project
+
+1. **Add a project reference** to `JsxSharedResources` in each client project:
+    - Right-click on the client project (e.g., `JsxAngularWebApiDemo`, `JsxReactWebApiDemo`, `JsxVueWebApiDemo`, `JsxBlazorWebApiDemo`).
+    - Select **Add** > **Project Reference**.
+    - Check `JsxSharedResources` and click **OK**.
+
+### Example: Blazor Project
+
+**In `JsxBlazorWebApiDemo`**:
+
+1. **Reference the Shared Resources Project**:
+    - Add a reference to `JsxSharedResources` in `JsxBlazorWebApiDemo`.
+
+2. **Use Static Files in Razor Components**:
+    - Create a Razor component that uses the shared static files.
+
+    ```razor
+    @page "/example"
+    @inject IWebHostEnvironment env
+
+    <h3>Example Page</h3>
+
+    <img src="@($"{env.WebRootPath}/images/logo.png")" alt="Logo">
+    <script src="@($"{env.WebRootPath}/JavaScript/script.js")"></script>
+    <link rel="stylesheet" href="@($"{env.WebRootPath}/CSS/style.css")">
+    ```
+
+### Example: Angular Project
+
+**In `JsxAngularWebApiDemo`**:
+
+1. **Copy Files Using a Build Script**:
+    - Create a script to copy the shared resources from `JsxSharedResources` to the `assets` folder of the Angular project during the build process.
+
+    ```json
+    
+    "scripts": {
+        "postinstall": "npm run copy-shared-resources",
+        "copy-shared-resources": "cp -r ../JsxSharedResources/* ./src/assets/"
+    }
+    ```
+
+2. **Use Static Files in Angular Components**:
+    - Reference the static files in your Angular components.
+
+    ```html
+    <!-- app.component.html -->
+    <img src="assets/images/logo.png" alt="Logo">
+    <script src="assets/JavaScript/script.js"></script>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    ```
+
+### Example: Vue Project
+
+**In `JsxVueWebApiDemo`**:
+
+1. **Copy Files Using a Build Script**:
+    - Create a script to copy the shared resources from `JsxSharedResources` to the `assets` folder of the Vue project during the build process.
+
+    ```json
+    
+    "scripts": {
+        "postinstall": "npm run copy-shared-resources",
+        "copy-shared-resources": "cp -r ../JsxSharedResources/* ./public/assets/"
+    }
+    ```
+
+2. **Use Static Files in Vue Components**:
+    - Reference the static files in your Vue components.
+
+    ```html
+    <!-- App.vue -->
+    <template>
+        <div>
+            <img src="assets/images/logo.png" alt="Logo">
+            <script src="assets/JavaScript/script.js"></script>
+            <link rel="stylesheet" href="assets/CSS/style.css">
+        </div>
+    </template>
+    ```
+
+### Example: React Project
+
+**In `JsxReactWebApiDemo`**:
+
+1. **Copy Files Using a Build Script**:
+    - Create a script to copy the shared resources from `JsxSharedResources` to the `public` folder of the React project during the build process.
+
+    ```json
+    // package.json
+    "scripts": {
+        "postinstall": "npm run copy-shared-resources",
+        "copy-shared-resources": "cp -r ../JsxSharedResources/* ./public/assets/"
+    }
+    ```
+
+2. **Use Static Files in React Components**:
+    - Reference the static files in your React components.
+
+    ```javascript
+    // App.js
+    import React from 'react';
+
+    function App() {
+        return (
+            <div>
+                <img src="assets/images/logo.png" alt="Logo" />
+                <script src="assets/JavaScript/script.js"></script>
+                <link rel="stylesheet" href="assets/CSS/style.css" />
+            </div>
+        );
+    }
+
+    export default App;
+    ```
+
+
+### Conclusion
+
+This area of the guide provides a basic overview of setting up the `JsxSharedResources` project to manage shared static resources and using these resources in various client projects (`JsxAngularCoreWebApiDemo`, `JsxReactCoreWebApiDemo`, `JsxVueCoreWebApiDemo`, and `JsxBlazorServerCoreWebApiDemo`). Follow the instructions to ensure your projects can consistently and efficiently utilize shared resources.
+
+---
+
+# Option 2: All-in-One Approach for Static Resources
+
+This guide provides an overview of how to create an All-in-One approach to manage and share static resources (HTML, CSS, JS, fonts, images, etc.) across various server-side and client-side projects including ASP.NET Core, Blazor, React, Vue, and Angular.
+
+## 1. Create a Shared Static Resources Project
+
+### Steps
+
+1. **Create a Razor Class Library for Static Resources:**
+
+    **File Structure:**
+    ```
+    /src
+      /MyApp.SharedResources
+        /MyApp.SharedResources.csproj
+        /wwwroot
+          /css
+            /styles.css
+          /js
+            /scripts.js
+          /fonts
+            /my-font.ttf
+          /images
+            /logo.png
+          /index.html
+    ```
+
+2. **Configure the Project File:**
+
+    **`MyApp.SharedResources.csproj`:**
+    ```xml
+    <Project Sdk="Microsoft.NET.Sdk.Razor">
+      <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <RazorLangVersion>8.0</RazorLangVersion>
+      </PropertyGroup>
+      <ItemGroup>
+        <Content Include="wwwroot\**\*" CopyToOutputDirectory="PreserveNewest" />
+      </ItemGroup>
+    </Project>
+    ```
+
+## 2. Reference Shared Resources in ASP.NET Core Project
+
+### Steps
+
+1. **Add Project Reference:**
+
+    **File Structure:**
+    ```
+    /src
+      /MyApp.Api
+        /MyApp.Api.csproj
+      /MyApp.SharedResources
+    ```
+
+2. **Configure the Project File:**
+
+    **`MyApp.Api.csproj`:**
+    ```xml
+    <Project Sdk="Microsoft.NET.Sdk.Web">
+      <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+      </PropertyGroup>
+      <ItemGroup>
+        <ProjectReference Include="..\MyApp.SharedResources\MyApp.SharedResources.csproj" />
+      </ItemGroup>
+    </Project>
+    ```
+
+3. **Configure Startup:**
+
+    **`Startup.cs` (or `Program.cs` for minimal hosting model):**
+    ```csharp
+    public class Startup
+    {
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddRazorPages();
+        }
+
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Error");
+                app.UseHsts();
+            }
+
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+
+            // Serve static files from the shared resources
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(env.ContentRootPath, "wwwroot")),
+                RequestPath = "/shared"
+            });
+
+            app.UseRouting();
+
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapRazorPages();
+            });
+        }
+    }
+    ```
+
+## 3. Reference Shared Resources in Client-Side Projects
+
+### React
+
+1. **Create a React Project:**
+
+    ```bash
+    npx create-react-app my-app-react
+    cd my-app-react
+    ```
+
+2. **Fetch Static Files:**
+
+    Modify `public/index.html` to load static resources from the ASP.NET Core backend.
+
+    **`my-app-react/public/index.html`:**
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://localhost:5001/shared/css/styles.css">
+    </head>
+    <body>
+      <div id="root"></div>
+      <script src="https://localhost:5001/shared/js/scripts.js"></script>
+    </body>
+    </html>
+    ```
+
+### Vue
+
+1. **Create a Vue Project:**
+
+    ```bash
+    npm init vue@3 my-app-vue
+    cd my-app-vue
+    ```
+
+2. **Fetch Static Files:**
+
+    Modify `public/index.html` to load static resources from the ASP.NET Core backend.
+
+    **`my-app-vue/public/index.html`:**
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://localhost:5001/shared/css/styles.css">
+    </head>
+    <body>
+      <div id="app"></div>
+      <script src="https://localhost:5001/shared/js/scripts.js"></script>
+    </body>
+    </html>
+    ```
+
+### Angular
+
+1. **Create an Angular Project:**
+
+    ```bash
+    ng new my-app-angular
+    cd my-app-angular
+    ```
+
+2. **Fetch Static Files:**
+
+    Modify `index.html` to load static resources from the ASP.NET Core backend.
+
+    **`my-app-angular/src/index.html`:**
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://localhost:5001/shared/css/styles.css">
+    </head>
+    <body>
+      <app-root></app-root>
+      <script src="https://localhost:5001/shared/js/scripts.js"></script>
+    </body>
+    </html>
+    ```
+
+3. **Configure HTTP Client Module:**
+
+    Add `HttpClientModule` to `app.module.ts` to ensure API requests work.
+
+    **`my-app-angular/src/app/app.module.ts`:**
+    ```typescript
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { HttpClientModule } from '@angular/common/http';
+    import { AppComponent } from './app.component';
+
+    @NgModule({
+      declarations: [
+        AppComponent
+      ],
+      imports: [
+        BrowserModule,
+        HttpClientModule
+      ],
+      providers: [],
+      bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+    ```
+
+## 4. Testing and Verification
+
+### Testing Static Resource Access
+
+- **Verify Static Files in ASP.NET Core:**
+
+    Access static files from the backend, e.g., `https://localhost:5001/shared/css/styles.css`, to ensure the resources are served correctly.
+
+- **Verify Static Files in Client-Side Projects:**
+
+    Check the network tab in browser developer tools to ensure that static files are fetched correctly from the ASP.NET Core backend.
+
+### Example Directory Structures
+
+- **ASP.NET Core Project:**
+    ```
+    /src
+      /MyApp.Api
+        /wwwroot
+          /css
+            /styles.css
+          /js
+            /scripts.js
+          /fonts
+            /my-font.ttf
+          /images
+            /logo.png
+          /index.html
+    ```
+
+- **Client-Side Projects:**
+    - **React:** `public/index.html`
+    - **Vue:** `public/index.html`
+    - **Angular:** `src/index.html`
+
+---
+# Creating .NET 8 Class Libraries, Razor Libraries, Packs, NuGet Packages & More
+
+This guide provides an overview of how to create and utilize .NET 8 Class Libraries, Razor Libraries, Packs, and NuGet Packages across ASP.NET Core, Blazor, React, Vue, and Angular projects.
+
+## 1. Creating .NET 8 Class Libraries
+
+### Steps
+
+1. **Create the Class Library Project:**
+
+    ```bash
+    dotnet new classlib -n MyApp.SharedLib
+    ```
+
+2. **Add Business Logic to the Class Library:**
+
+    **`MyApp.SharedLib/StringHelper.cs`:**
+    ```csharp
+    namespace MyApp.SharedLib.Utilities
+    {
+        public static class StringHelper
+        {
+            public static string ToTitleCase(string input)
+            {
+                if (string.IsNullOrWhiteSpace(input)) return input;
+                return System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(input.ToLower());
+            }
+        }
+    }
+    ```
+
+3. **Create a Razor Class Library Project (for UI Components):**
+
+    ```bash
+    dotnet new razorclasslib -n MyApp.UIComponents
+    ```
+
+4. **Add Razor Components:**
+
+    **`MyApp.UIComponents/Components/HelloWorld.razor`:**
+    ```razor
+    <h3>Hello, world!</h3>
+    ```
+
+5. **Pack and Publish the Libraries (Optional):**
+
+    ```bash
+    dotnet pack -c Release
+    dotnet nuget push MyApp.SharedLib.1.0.0.nupkg -k <YOUR_API_KEY> -s https://api.nuget.org/v3/index.json
+    ```
+
+## 2. Using .NET 8 Class Libraries in Blazor Projects
+
+### Steps
+
+1. **Create a Blazor WebAssembly Project:**
+
+    ```bash
+    dotnet new blazorwasm -n MyApp.Blazor
+    ```
+
+2. **Add Project References:**
+
+    **`MyApp.Blazor/MyApp.Blazor.csproj`:**
+    ```xml
+    <Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+      <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+      </PropertyGroup>
+      <ItemGroup>
+        <ProjectReference Include="..\MyApp.SharedLib\MyApp.SharedLib.csproj" />
+        <ProjectReference Include="..\MyApp.UIComponents\MyApp.UIComponents.csproj" />
+      </ItemGroup>
+    </Project>
+    ```
+
+3. **Use Shared Library and Razor Components:**
+
+    **`MyApp.Blazor/Pages/Index.razor`:**
+    ```razor
+    @page "/"
+    @using MyApp.SharedLib.Utilities
+    @using MyApp.UIComponents.Components
+
+    <h3>@StringHelper.ToTitleCase("hello, world!")</h3>
+    <HelloWorld />
+    ```
+
+## 3. Using .NET 8 Class Libraries in React Projects
+
+### Steps
+
+1. **Create a React Project:**
+
+    ```bash
+    npx create-react-app my-app-react
+    cd my-app-react
+    ```
+
+2. **Fetch Data from ASP.NET Core API:**
+
+    **`my-app-react/src/App.js`:**
+    ```javascript
+    import React, { useState, useEffect } from 'react';
+    import axios from 'axios';
+
+    function App() {
+      const [titleCase, setTitleCase] = useState('');
+
+      useEffect(() => {
+        axios.get('https://localhost:5001/api/sample/titlecase?input=hello, world!')
+          .then(response => setTitleCase(response.data));
+      }, []);
+
+      return (
+        <div>
+          <h3>{titleCase}</h3>
+        </div>
+      );
+    }
+
+    export default App;
+    ```
+
+## 4. Using .NET 8 Class Libraries in Vue Projects
+
+### Steps
+
+1. **Create a Vue Project:**
+
+    ```bash
+    npm init vue@3 my-app-vue
+    cd my-app-vue
+    ```
+
+2. **Fetch Data from ASP.NET Core API:**
+
+    **`my-app-vue/src/App.vue`:**
+    ```html
+    <template>
+      <div>
+        <h3>{{ titleCase }}</h3>
+      </div>
+    </template>
+
+    <script>
+    import axios from 'axios';
+
+    export default {
+      data() {
+        return {
+          titleCase: ''
+        };
+      },
+      mounted() {
+        axios.get('https://localhost:5001/api/sample/titlecase?input=hello, world!')
+          .then(response => this.titleCase = response.data);
+      }
+    };
+    </script>
+    ```
+
+## 5. Using .NET 8 Class Libraries in Angular Projects
+
+### Steps
+
+1. **Create an Angular Project:**
+
+    ```bash
+    ng new my-app-angular
+    cd my-app-angular
+    ```
+
+2. **Fetch Data from ASP.NET Core API:**
+
+    **`my-app-angular/src/app/app.component.ts`:**
+    ```typescript
+    import { HttpClient } from '@angular/common/http';
+    import { Component, OnInit } from '@angular/core';
+
+    @Component({
+      selector: 'app-root',
+      template: '<h3>{{ titleCase }}</h3>',
+    })
+    export class AppComponent implements OnInit {
+      titleCase: string = '';
+
+      constructor(private http: HttpClient) {}
+
+      ngOnInit() {
+        this.http.get<string>('https://localhost:5001/api/sample/titlecase?input=hello, world!')
+          .subscribe(data => this.titleCase = data);
+      }
+    }
+    ```
+
+    **`my-app-angular/src/app/app.module.ts`:**
+    ```typescript
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { HttpClientModule } from '@angular/common/http';
+    import { AppComponent } from './app.component';
+
+    @NgModule({
+      declarations: [
+        AppComponent
+      ],
+      imports: [
+        BrowserModule,
+        HttpClientModule
+      ],
+      providers: [],
+      bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+    ```
+
+---
+
+# Option 3: All-in-One Approach for Static Resources
+
+This guide provides an overview of how to create an All-in-One approach to manage and share static resources (HTML, CSS, JS, fonts, images, etc.) across various server-side and client-side projects including ASP.NET Core, Blazor, React, Vue, and Angular.
+
+## 1. Create a Shared Static Resources Project
+
+### Steps
+
+1. **Create a Razor Class Library for Static Resources:**
+
+    **File Structure:**
+    ```
+    /src
+      /MyApp.SharedResources
+        /MyApp.SharedResources.csproj
+        /wwwroot
+          /css
+            /styles.css
+          /js
+            /scripts.js
+          /fonts
+            /my-font.ttf
+          /images
+            /logo.png
+          /index.html
+    ```
+
+2. **Configure the Project File:**
+
+    **`MyApp.SharedResources.csproj`:**
+    ```xml
+    <Project Sdk="Microsoft.NET.Sdk.Razor">
+      <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <RazorLangVersion>8.0</RazorLangVersion>
+      </PropertyGroup>
+      <ItemGroup>
+        <Content Include="wwwroot\**\*" CopyToOutputDirectory="PreserveNewest" />
+      </ItemGroup>
+    </Project>
+    ```
+
+## 2. Reference Shared Resources in ASP.NET Core Project
+
+### Steps
+
+1. **Add Project Reference:**
+
+    **File Structure:**
+    ```
+    /src
+      /MyApp.Api
+        /MyApp.Api.csproj
+      /MyApp.SharedResources
+    ```
+
+2. **Configure the Project File:**
+
+    **`MyApp.Api.csproj`:**
+    ```xml
+    <Project Sdk="Microsoft.NET.Sdk.Web">
+      <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+      </PropertyGroup>
+      <ItemGroup>
+        <ProjectReference Include="..\MyApp.SharedResources\MyApp.SharedResources.csproj" />
+      </ItemGroup>
+    </Project>
+    ```
+
+3. **Configure Startup:**
+
+    **`Startup.cs` (or `Program.cs` for minimal hosting model):**
+    ```csharp
+    public class Startup
+    {
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddRazorPages();
+        }
+
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Error");
+                app.UseHsts();
+            }
+
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+
+            // Serve static files from the shared resources
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(env.ContentRootPath, "wwwroot")),
+                RequestPath = "/shared"
+            });
+
+            app.UseRouting();
+
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapRazorPages();
+            });
+        }
+    }
+    ```
+
+## 3. Reference Shared Resources in Client-Side Projects
+
+### React
+
+1. **Create a React Project:**
+
+    ```bash
+    npx create-react-app my-app-react
+    cd my-app-react
+    ```
+
+2. **Fetch Static Files:**
+
+    Modify `public/index.html` to load static resources from the ASP.NET Core backend.
+
+    **`my-app-react/public/index.html`:**
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://localhost:5001/shared/css/styles.css">
+    </head>
+    <body>
+      <div id="root"></div>
+      <script src="https://localhost:5001/shared/js/scripts.js"></script>
+    </body>
+    </html>
+    ```
+
+### Vue
+
+1. **Create a Vue Project:**
+
+    ```bash
+    npm init vue@3 my-app-vue
+    cd my-app-vue
+    ```
+
+2. **Fetch Static Files:**
+
+    Modify `public/index.html` to load static resources from the ASP.NET Core backend.
+
+    **`my-app-vue/public/index.html`:**
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://localhost:5001/shared/css/styles.css">
+    </head>
+    <body>
+      <div id="app"></div>
+      <script src="https://localhost:5001/shared/js/scripts.js"></script>
+    </body>
+    </html>
+    ```
+
+### Angular
+
+1. **Create an Angular Project:**
+
+    ```bash
+    ng new my-app-angular
+    cd my-app-angular
+    ```
+
+2. **Fetch Static Files:**
+
+    Modify `index.html` to load static resources from the ASP.NET Core backend.
+
+    **`my-app-angular/src/index.html`:**
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://localhost:5001/shared/css/styles.css">
+    </head>
+    <body>
+      <app-root></app-root>
+      <script src="https://localhost:5001/shared/js/scripts.js"></script>
+    </body>
+    </html>
+    ```
+
+3. **Configure HTTP Client Module:**
+
+    Add `HttpClientModule` to `app.module.ts` to ensure API requests work.
+
+    **`my-app-angular/src/app/app.module.ts`:**
+    ```typescript
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { HttpClientModule } from '@angular/common/http';
+    import { AppComponent } from './app.component';
+
+    @NgModule({
+      declarations: [
+        AppComponent
+      ],
+      imports: [
+        BrowserModule,
+        HttpClientModule
+      ],
+      providers: [],
+      bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+    ```
+
+## 4. Testing and Verification
+
+### Testing Static Resource Access
+
+- **Verify Static Files in ASP.NET Core:**
+
+    Access static files from the backend, e.g., `https://localhost:5001/shared/css/styles.css`, to ensure the resources are served correctly.
+
+- **Verify Static Files in Client-Side Projects:**
+
+    Check the network tab in browser developer tools to ensure that static files are fetched correctly from the ASP.NET Core backend.
+
+### Example Directory Structures
+
+- **ASP.NET Core Project:**
+    ```
+    /src
+      /MyApp.Api
+        /wwwroot
+          /css
+            /styles.css
+          /js
+            /scripts.js
+          /fonts
+            /my-font.ttf
+          /images
+            /logo.png
+          /index.html
+    ```
+
+- **Client-Side Projects:**
+    - **React:** `public/index.html`
+    - **Vue:** `public/index.html`
+    - **Angular:** `src/index.html`
+
+
 ## Phase 1 of 4: Planned Evolution of jSilvestri.com BETA v 2024 JSopX™ Open Demo Collection Project
 
 Depending on when you visit this demo application, it may look very different from your previous visit. I am not talking about common checkins to improve the applications. I am talking about noticable, planned, development that will shape each application in accordance to the grand design. In other words, the variability is intentional. 
 
 The purpose of this project, and its associated projects, is to showcase my basic skills in the technologies I am currently exploring in 2024. By leveraging my 20 years of experience in full stack development and solution architecting, I aim to address areas often overlooked in typical online examples, such as security, object-oriented coding, and the transformation of existing assets, templates, and projects into custom creative designs that support specific objectives.
 
-The target technologies and project structures include **Asp.NET Core**, **AngularJS**,**Blazor**, **Vue**, **ReactJS**, and **.NET MAUI Blazor Hybrid**, all of which access the same Web API and shared projects using ASP.NET Core 8 and Visual Studio 2022 (or higher).
+The target technologies and project structures include **Asp.NET Core**, **AngularJS**, **Blazor**, **Vue**, **ReactJS**, and **.NET MAUI Blazor Hybrid**, all of which access the same Web API and shared projects using ASP.NET Core 8 and Visual Studio 2022 (or higher).
 
 ### Source Control Strategies
 

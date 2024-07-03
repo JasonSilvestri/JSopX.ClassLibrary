@@ -1,9 +1,9 @@
-﻿jSilvestri.com BETA v 2024 JSopX™ Open Demo Collection Project: 
-[JSopX™ Class Library Asp.NET Core Open Demo Project](https://github.com/JasonSilvestri/JsxAngularCoreWebApiDemo)
+﻿jSilvestri.com BETA v 2024 JSopX™ OpenX Demo Collection Project: 
+[JSopX™ Asp.NET Core Class Library Project](https://github.com/JasonSilvestri/JSopX.ClassLibrary)
 
 Phase 1 of 4:
 
-[Licensed under MIT](https://github.com/JasonSilvestri/JsxAngularCoreWebApiDemo/blob/master/LICENSE.txt)
+[Licensed under MIT](https://github.com/JasonSilvestri/JSopX.ClassLibrary/blob/master/LICENSE.txt)
 
 © 2024 Jason Silvestri · All Rights Reserved  
 

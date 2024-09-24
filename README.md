@@ -262,7 +262,7 @@ public class ExampleService
     
     "scripts": {
         "postinstall": "npm run copy-shared-resources",
-        "copy-shared-resources": "cp -r ../JsopX.SharedResources/* ./src/full-assets/"
+        "copy-shared-resources": "cp -r ../JsopX.SharedResources/* ./src/assets/"
     }
     ```
 
@@ -287,7 +287,7 @@ public class ExampleService
     
     "scripts": {
         "postinstall": "npm run copy-shared-resources",
-        "copy-shared-resources": "cp -r ../JsopX.SharedResources/* ./public/full-assets/"
+        "copy-shared-resources": "cp -r ../JsopX.SharedResources/* ./public/assets/"
     }
     ```
 
@@ -316,7 +316,7 @@ public class ExampleService
     // package.json
     "scripts": {
         "postinstall": "npm run copy-shared-resources",
-        "copy-shared-resources": "cp -r ../JsopX.SharedResources/* ./public/full-assets/"
+        "copy-shared-resources": "cp -r ../JsopX.SharedResources/* ./public/assets/"
     }
     ```
 

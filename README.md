@@ -43,34 +43,7 @@ This homogeneous suite of JSopX™ projects, uses some of the most advanced clie
 - [Getting Quick Started](#jsopx-project-technology-requirements)
 - [High Level Tech Highlights](#high-level-tech-highlights) 
    - [Technology Requirements](#jsopx-project-technology-requirements)
-      - [JSopX™ GitHub Repositories (v 1.0)](#jsopx-github-repositories)
-      - [Common Technologies Included](#common-technologies-included)
-      - [Visual Studio (v 17.10.3)](#visual-studio)
-      - [.NET Framework (v 8.0.3)](#net-framework-sdk)
-      - [ASP.NET Core (v 8.0.3)](#aspnet-core)
-      - [.NET Core Blazor (v 8.0.3)](#net-core-blazor)
-      - [.NET Core MAUI Hybrid (v 8.0.3)](#net-core-maui-hybrid)
-      - [Node (v 20.14.0)](#node)
-      - [npm (v 10.8.1)](#npm)
-      - [Angular CLI (v 18.0.3)](#angular-cli)
-      - [React (v 18.2.0)](#react)
-      - [Vue (v 10.8.1)](#vue)
-      - [Vite (v 3.4.21)](#vite)
-  - [JSopX™ Project Repositories](#jsopx-project-repositories)
-     - [JSopX™ OpenProjectX](#jsopxopenprojectx)
-     - [JSopX™ Bridge Too Far](#jsopxbridgetoofar)
-     - [JSopX™ Class Library](#jsopxclasslibrary)
-     - [JSopX™ WebAPI](#jsopxwebapi)
-     - [JSopX™ Shared Resources](#jsopxsharedresources)
-     - [JSopX™ RCL x Proper](#jsopxrclxproper)
-     - [JSopX™ RCL x Assets](#jsopxrclxassets)
-     - [JSopX™ RCL x Components](#jsopxrclxcomponents)
-     - [JSopX™ Angular Core](#jsopxangularcore)
-     - [JSopX™ React Core](#jsopxreactcore)
-     - [JSopX™ Vue Core](#jsopxvuecore)
-     - [JSopX™ AspNet Core](#jsopxaspnetcore)
-     - [JSopX™ Blazor Server Core](#jsopxblazorservercore)
-     - [JSopX™ Maui Hybrid Net Core](#jsopxmauihybridnetcore)
+   - [JSopX™ Project Repositories](#jsopx-project-repositories)   
 - [In Conclusion](#in-conclusion)
 
 
@@ -97,11 +70,11 @@ Please pay close attention to the alerts that appear in documentation that look 
 
 The JSopX™ OpenX `JSopX.ClassLibrary`Project requires at least the following technologies to run as expected.
 
-- [jSilvestri.com BETA v 2024 JSopX™ OpenX Collection Project](https://github.com/JasonSilvestri/JSopX.OpenXDemoCollection)
-- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
-- [ASP.NET Core 8 Documentation](https://learn.microsoft.com/en-us/aspnet/core/)
-- [Visual Studio or Visual Studio Code 2022 (v 17.10.3) or higher](https://visualstudio.microsoft.com/)
- 
+- Visual Studio 2022 (17.11.5) or higher installed.
+- Existing JSopX projects (e.g., `JSopX.BridgeTooFar`, `JSopX.ClassLibrary`, `JSopX.WebAPI`, etc.).
+- Installed .NET 8.0.7 SDK.
+- Installed Node.js 20.14.0
+- Basic understanding of `.csproj` and `.sln` file structures.
 
 ### Corequisites
 
@@ -196,46 +169,36 @@ The **best place** you can **start** is the [JSopX™ Project Technology Require
 
 ## Table of Contents
 
-- [Prerequisites](#prerequisites)
-- [Corequisites](#corequisites)
-- [Postrequisites](#postrequisites)
-- [Concomitants](#concomitants)
-- [JSopX™ Class Library Structure](#jsopx-class-library-structure)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Getting Quick Started](#jsopx-project-technology-requirements)
-- [Overview](#overview)
-- [High Level Tech Highlights](#high-level-tech-highlights) 
-- [Prerequisites](#prerequisites)
-   - [Technology Requirements](#jsopx-project-technology-requirements)
-      - [JSopX™ GitHub Repositories (v 1.0)](#jsopx-github-repositories)
-      - [Common Technologies Included](#common-technologies-included)
-      - [Visual Studio (v 17.10.3)](#visual-studio)
-      - [.NET Framework (v 8.0.3)](#net-framework-sdk)
-      - [ASP.NET Core (v 8.0.3)](#aspnet-core)
-      - [.NET Core Blazor (v 8.0.3)](#net-core-blazor)
-      - [.NET Core MAUI Hybrid (v 8.0.3)](#net-core-maui-hybrid)
-      - [Node (v 20.14.0)](#node)
-      - [npm (v 10.8.1)](#npm)
-      - [Angular CLI (v 18.0.3)](#angular-cli)
-      - [React (v 18.2.0)](#react)
-      - [Vue (v 10.8.1)](#vue)
-      - [Vite (v 3.4.21)](#vite)
+
+- [Technology Requirements](#jsopx-project-technology-requirements)
+   - [JSopX™ GitHub Repositories (v 1.0)](#jsopx-github-repositories)
+   - [Common Technologies Included](#common-technologies-included)
+   - [Visual Studio (v 17.10.3)](#visual-studio)
+   - [.NET Framework (v 8.0.3)](#net-framework-sdk)
+   - [ASP.NET Core (v 8.0.3)](#aspnet-core)
+   - [.NET Core Blazor (v 8.0.3)](#net-core-blazor)
+   - [.NET Core MAUI Hybrid (v 8.0.3)](#net-core-maui-hybrid)
+   - [Node (v 20.14.0)](#node)
+   - [npm (v 10.8.1)](#npm)
+   - [Angular CLI (v 18.0.3)](#angular-cli)
+   - [React (v 18.2.0)](#react)
+   - [Vue (v 10.8.1)](#vue)
+   - [Vite (v 3.4.21)](#vite)
   - [JSopX™ Project Repositories](#jsopx-project-repositories)
-     - [JSopX™ OpenProjectX](#jsopxopenprojectx)
-     - [JSopX™ Bridge Too Far](#jsopxbridgetoofar)
-     - [JSopX™ Class Library](#jsopxclasslibrary)
-     - [JSopX™ WebAPI](#jsopxwebapi)
-     - [JSopX™ Shared Resources](#jsopxsharedresources)
-     - [JSopX™ RCL x Proper](#jsopxrclxproper)
-     - [JSopX™ RCL x Assets](#jsopxrclxassets)
-     - [JSopX™ RCL x Components](#jsopxrclxcomponents)
-     - [JSopX™ Angular Core](#jsopxangularcore)
-     - [JSopX™ React Core](#jsopxreactcore)
-     - [JSopX™ Vue Core](#jsopxvuecore)
-     - [JSopX™ AspNet Core](#jsopxaspnetcore)
-     - [JSopX™ Blazor Server Core](#jsopxblazorservercore)
-     - [JSopX™ Maui Hybrid Net Core](#jsopxmauihybridnetcore)
+   - [JSopX™ OpenProjectX](#jsopxopenprojectx)
+   - [JSopX™ Bridge Too Far](#jsopxbridgetoofar)
+   - [JSopX™ Class Library](#jsopxclasslibrary)
+   - [JSopX™ WebAPI](#jsopxwebapi)
+   - [JSopX™ Shared Resources](#jsopxsharedresources)
+   - [JSopX™ RCL x Proper](#jsopxrclxproper)
+   - [JSopX™ RCL x Assets](#jsopxrclxassets)
+   - [JSopX™ RCL x Components](#jsopxrclxcomponents)
+   - [JSopX™ Angular Core](#jsopxangularcore)
+   - [JSopX™ React Core](#jsopxreactcore)
+   - [JSopX™ Vue Core](#jsopxvuecore)
+   - [JSopX™ AspNet Core](#jsopxaspnetcore)
+   - [JSopX™ Blazor Server Core](#jsopxblazorservercore)
+   - [JSopX™ Maui Hybrid Net Core](#jsopxmauihybridnetcore)
 - [In Conclusion](#in-conclusion)
 
 ### Postrequisites
@@ -327,19 +290,19 @@ This section is to help in that area.
 
 - [Prerequisites](#prerequisites)
    - [Technology Requirements](#jsopx-project-technology-requirements)
-      - [JSopX™ GitHub Repositories (v 1.0)](#jsopx-github-repositories)
-      - [Common Technologies Included](#common-technologies-included)
-      - [Visual Studio (v 17.10.3)](#visual-studio)
-      - [.NET Framework (v 8.0.3)](#net-framework-sdk)
-      - [ASP.NET Core (v 8.0.3)](#aspnet-core)
-      - [.NET Core Blazor (v 8.0.3)](#net-core-blazor)
-      - [.NET Core MAUI Hybrid (v 8.0.3)](#net-core-maui-hybrid)
-      - [Node (v 20.14.0)](#node)
-      - [npm (v 10.8.1)](#npm)
-      - [Angular CLI (v 18.0.3)](#angular-cli)
-      - [React (v 18.2.0)](#react)
-      - [Vue (v 10.8.1)](#vue)
-      - [Vite (v 3.4.21)](#vite)
+   - [JSopX™ GitHub Repositories (v 1.0)](#jsopx-github-repositories)
+   - [Common Technologies Included](#common-technologies-included)
+   - [Visual Studio (v 17.10.3)](#visual-studio)
+   - [.NET Framework (v 8.0.3)](#net-framework-sdk)
+   - [ASP.NET Core (v 8.0.3)](#aspnet-core)
+   - [.NET Core Blazor (v 8.0.3)](#net-core-blazor)
+   - [.NET Core MAUI Hybrid (v 8.0.3)](#net-core-maui-hybrid)
+   - [Node (v 20.14.0)](#node)
+   - [npm (v 10.8.1)](#npm)
+   - [Angular CLI (v 18.0.3)](#angular-cli)
+   - [React (v 18.2.0)](#react)
+   - [Vue (v 10.8.1)](#vue)
+   - [Vite (v 3.4.21)](#vite)
 
 
 ---
@@ -442,7 +405,7 @@ So, typically when you see people trying to be GitHub cool, they will often prov
        **Explanation**:
        `npx degit` is a tool that allows you to clone a repository without including the `.git` folder. It's useful for creating a fresh start without any history, which can be handy for scaffolding projects.
 
-       - **Vite (After CLoning)**:
+    - **Vite (After CLoning)**:
        If you want to clone a repository directly and then use tools like `Vite` (_what we use in Vue to handle certain build aspects_), from the `Bash` command line, you can use `npx`:
 
    - **Vite** (After Cloning):
@@ -462,9 +425,9 @@ So, typically when you see people trying to be GitHub cool, they will often prov
        ```
    
       ### Summary:
-       - **PowerShell** and **Bash** both use `git clone` after navigating to the local directory.
-       - **npm** (or `npx`) can use the `degit` command to clone a repository directly.
-       - **Vite** steps show initializing or installing the project after cloning.
+    - **PowerShell** and **Bash** both use `git clone` after navigating to the local directory.
+    - **npm** (or `npx`) can use the `degit` command to clone a repository directly.
+    - **Vite** steps show initializing or installing the project after cloning.
        
 3. _Open_ the solution in `Visual Studio`:
 

@@ -9,15 +9,6 @@ From the ﻿jSilvestri.com BETA v 2024 JSopX™ Open Project EXperiences Collect
 > The content before you is a draft version of the document. It **should not** be considered **accurate**. In fact, drafts will often times be for different reasons, such as testing styles, content, etc. The content itself may have only been used as a placeholder, making sections, or even the entire document contain information not relative to this project.
 
 
-> [!WARNING]
-> **Phase 1: Minimum Viable Product (MVP)**
-> 
-> This project is currently in **Phase 1** of Development. It **should not** be considered **accurate** or a **release candidate**. In fact, it should be treated as simply reference material for the time being, due to the absolute bare minimum resources created, to satisfy a minimum viable product requirement in Phase 1 (by design). Conversely, Phase 2 is days away, and Phase 3 is only a week after that. Phase 3 Projects will be mature, and action-packed with features, assets, documentation and more!
-> 
-> Please see [Phase 1 (Current Phase): Minimum Viable Product (MVP)](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/blob/master/JSopX.BridgeTooFar/Docs/JSopX/Master/Phases/Phase-1-Minimum-Viable-Product-MVP.md) for more details.
-
-
-
 The `JSopX.ClassLibrary` application (i.e., jSilvestri.com BETA v 2024 JSopX™ Class Library) in specific, is a FREE, open-source, custom, reusable, jSilvestri.com BETA v 2024 Open Project EXperiences Collection of Projects Class Library, designed to hold common constants, enums, and helper classes that can be shared across multiple projects. 
 
 ## Overview
@@ -26,6 +17,61 @@ The `JSopX.ClassLibrary` application (i.e., jSilvestri.com BETA v 2024 JSopX™ 
 The `JSopX.ClassLibrary` Project (i.e., _jSilvestri.com BETA v 2024 JSopX™ Class Library Open Project EXperience_) is one of several, FREE, open-source projects, included in the first-of-its-kind, Multi-Platform, Multi-Stack, `JSopX™ Open Project EXperiences Collection` Enterprise-Level Application.
 
 This homogeneous suite of JSopX™ projects, uses some of the most advanced client-side and server-side technologies of today, such as Asp.NET Core, Blazor, .NET MAUI, Angular, React, Node.JS, Vue &amp; more! All access the same server-side Web API, while using the same client-side, look-and-feel resources and assets across all projects, constructed as a centeralized, unified, enterprise-level soluiton, and available as responsive web designs for most mobile, tablet, laptop & desktop web browsers, as a Windows, Linux and Mac desktop application, and as a native mobile app for Iphone, Android, Samsung Galaxy and Windows Phone.
+
+
+> [!WARNING]
+> **Phase 1: Minimum Viable Product (MVP)**
+> 
+> This project is currently in **Phase 1** of Development. It **should not** be considered **accurate** or a **release candidate**. In fact, it should be treated as simply reference material for the time being, due to the absolute bare minimum resources created, to satisfy a minimum viable product requirement in Phase 1 (by design). Conversely, Phase 2 is days away, and Phase 3 is only a week after that. Phase 3 Projects will be mature, and action-packed with features, assets, documentation and more!
+> 
+> Please see [Phase 1 (Current Phase): Minimum Viable Product (MVP)](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/blob/master/JSopX.BridgeTooFar/Docs/JSopX/Master/Phases/Phase-1-Minimum-Viable-Product-MVP.md) for more details.
+
+
+## Table of Contents
+
+- [Overview](#overview)
+  - [Table of Contents](#table-of-contents)
+  - [Alerts](#alerts)
+    - [Current Alerts](#current-alerts)
+- [Prerequisites](#prerequisites)
+- [Corequisites](#corequisites)
+- [Postrequisites](#postrequisites)
+- [Concomitants](#concomitants)
+- [JSopX™ Class Library Structure](#jsopx-class-library-structure)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Getting Quick Started](#jsopx-project-technology-requirements)
+- [High Level Tech Highlights](#high-level-tech-highlights) 
+   - [Technology Requirements](#jsopx-project-technology-requirements)
+      - [JSopX™ GitHub Repositories (v 1.0)](#jsopx-github-repositories)
+      - [Common Technologies Included](#common-technologies-included)
+      - [Visual Studio (v 17.10.3)](#visual-studio)
+      - [.NET Framework (v 8.0.3)](#net-framework-sdk)
+      - [ASP.NET Core (v 8.0.3)](#aspnet-core)
+      - [.NET Core Blazor (v 8.0.3)](#net-core-blazor)
+      - [.NET Core MAUI Hybrid (v 8.0.3)](#net-core-maui-hybrid)
+      - [Node (v 20.14.0)](#node)
+      - [npm (v 10.8.1)](#npm)
+      - [Angular CLI (v 18.0.3)](#angular-cli)
+      - [React (v 18.2.0)](#react)
+      - [Vue (v 10.8.1)](#vue)
+      - [Vite (v 3.4.21)](#vite)
+  - [JSopX™ Project Repositories](#jsopx-project-repositories)
+     - [JSopX™ OpenProjectX](#jsopxopenprojectx)
+     - [JSopX™ Bridge Too Far](#jsopxbridgetoofar)
+     - [JSopX™ Class Library](#jsopxclasslibrary)
+     - [JSopX™ WebAPI](#jsopxwebapi)
+     - [JSopX™ Shared Resources](#jsopxsharedresources)
+     - [JSopX™ RCL x Proper](#jsopxrclxproper)
+     - [JSopX™ RCL x Assets](#jsopxrclxassets)
+     - [JSopX™ RCL x Components](#jsopxrclxcomponents)
+     - [JSopX™ Angular Core](#jsopxangularcore)
+     - [JSopX™ React Core](#jsopxreactcore)
+     - [JSopX™ Vue Core](#jsopxvuecore)
+     - [JSopX™ AspNet Core](#jsopxaspnetcore)
+     - [JSopX™ Blazor Server Core](#jsopxblazorservercore)
+     - [JSopX™ Maui Hybrid Net Core](#jsopxmauihybridnetcore)
+- [In Conclusion](#in-conclusion)
 
 
 ## Alerts
@@ -148,10 +194,8 @@ This approach allows you to clone one or more Git Repositories as `Independent` 
 The **best place** you can **start** is the [JSopX™ Project Technology Requirements](jsopx-project-technology-requirements) section if you are new to any (or all) aspects of the projects or technologies described here.
 
 
-- [Overview](#overview)
-  - [Table of Contents](#table-of-contents)
-  - [Alerts](#alerts)
-    - [Current Alerts](#current-alerts)
+## Table of Contents
+
 - [Prerequisites](#prerequisites)
 - [Corequisites](#corequisites)
 - [Postrequisites](#postrequisites)
@@ -192,9 +236,6 @@ The **best place** you can **start** is the [JSopX™ Project Technology Require
      - [JSopX™ AspNet Core](#jsopxaspnetcore)
      - [JSopX™ Blazor Server Core](#jsopxblazorservercore)
      - [JSopX™ Maui Hybrid Net Core](#jsopxmauihybridnetcore)
-- [Corequisites](#corequisites)
-- [Postrequisites](#postrequisites)
-- [Concomitants](#concomitants)
 - [In Conclusion](#in-conclusion)
 
 ### Postrequisites

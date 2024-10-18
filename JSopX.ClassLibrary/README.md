@@ -20,6 +20,7 @@ The `JSopX.ClassLibrary` Project (i.e., _jSilvestri.com BETA v 2024 JSopX™ Cla
 
 This homogeneous suite of JSopX™ projects, uses some of the most advanced client-side and server-side technologies of today, such as Asp.NET Core, Blazor, .NET MAUI, Angular, React, Node.JS, Vue &amp; more! All access the same server-side Web API, while using the same client-side, look-and-feel resources and assets across all projects, constructed as a centeralized, unified, enterprise-level soluiton, and available as responsive web designs for most mobile, tablet, laptop & desktop web browsers, as a Windows, Linux and Mac desktop application, and as a native mobile app for Iphone, Android, Samsung Galaxy and Windows Phone.
 
+
 ![JSopX™ Open Project EXperiences Assets Projects](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/blob/master/JSopX.BridgeTooFar/doc-assets/bootstrap-themes.png)
 
 > [!WARNING]
@@ -46,7 +47,7 @@ This homogeneous suite of JSopX™ projects, uses some of the most advanced clie
 - [Getting Quick Started](#jsopx-project-technology-requirements)
 - [High Level Tech Highlights](#high-level-tech-highlights) 
    - [Technology Requirements](#jsopx-project-technology-requirements)
-   - [JSopX™ Project Repositories](#jsopx-project-repositories)   
+   - [JSopX™ Project Repositories](#jsopx-project-git-hub-repositories)   
 - [In Conclusion](#in-conclusion)
 
 
@@ -102,7 +103,7 @@ The purpose of this effort is not only to highlight design patterns & best pract
 
 1. You are familar with the `JasonSilvestri` GitHub and understand what `repositories` are as a whole.
 2. You already have installed or checked that you have the minimum [JSopX™ Project Technology Requirements](#jsopx-project-technology-requirements).
-3. You have at least reviewed the [JSopX™ Project Respositories](#jsopx-project-repositories).
+3. You have at least reviewed the [JSopX™ Project Respositories](#jsopx-project-git-hub-repositories).
 
 
 ## Quick Start : Option 1: Get an `All-In-One` Copy of Git Repository
@@ -187,7 +188,7 @@ The **best place** you can **start** is the [JSopX™ Project Technology Require
    - [React (v 18.2.0)](#react)
    - [Vue (v 10.8.1)](#vue)
    - [Vite (v 3.4.21)](#vite)
-  - [JSopX™ Project Repositories](#jsopx-project-repositories)
+  - [JSopX™ Project Repositories](#jsopx-project-git-hub-repositories)
    - [JSopX™ OpenProjectX](#jsopxopenprojectx)
    - [JSopX™ Bridge Too Far](#jsopxbridgetoofar)
    - [JSopX™ Class Library](#jsopxclasslibrary)
@@ -2096,7 +2097,7 @@ As you can see, there is quite a big technology payload for this solution. Be su
 ## Table of Contents : JSopX™ Project Git Hub Repositories
 
 - [Prerequisites](#prerequisites)
-  - [JSopX™ Project Repositories](#jsopx-project-repositories)
+  - [JSopX™ Project Repositories](#jsopx-project-git-hub-repositories)
      - [JSopX™ OpenProjectX](#jsopxopenprojectx)
      - [JSopX™ Bridge Too Far](#jsopxbridgetoofar)
      - [JSopX™ Class Library](#jsopxclasslibrary)
@@ -2255,7 +2256,7 @@ The _Project References_ included in the **`JSopX.BridgeTooFar`** Project are as
 Don't forget that the **`JSopX.BridgeTooFar`** Project requires certain technologies installed to work as expected.
 
 [`JSopX`](https://github.com/JasonSilvestri/JSopX.OpenProjectX) [`Bootstrap`](#common-technologies-included) [`HTML`](#common-technologies-included) [`CSS`](#common-technologies-included) [`JS`](#common-technologies-included) [`TypeScript`](#common-technologies-included) [`Visual Studio`](#visual-studio) [`Asp.NET Core`](#aspnet-core) [`.NET Framework SDK`](#net-framework-sdk) [`C#`](#common-technologies-included)  » 
-[`All Technology Requirements`](#table-of-contents--technology-requirements)  »  [`All Project Repositories`](#jsopx-project-repositories)  »  [`Back to Top`](#table-of-contents)
+[`All Technology Requirements`](#table-of-contents--technology-requirements)  »  [`All Project Repositories`](#jsopx-project-git-hub-repositories)  »  [`Back to Top`](#table-of-contents)
 
 ---
 
@@ -2317,7 +2318,7 @@ The _Project References_ included in the **`JSopX.ClassLibrary`** Project are as
 Don't forget that the **`JSopX.ClassLibrary`** Project requires certain technologies installed to work as expected.
 
 [`JSopX`](https://github.com/JasonSilvestri/JSopX.OpenProjectX) [`Visual Studio`](#visual-studio) [`Asp.NET Core`](#aspnet-core) [`.NET Framework SDK`](#net-framework-sdk) [`C#`](#common-technologies-included)  » 
-[`See All Technology Requirements`](#table-of-contents--technology-requirements)  »  [`See All Project Repositories`](#jsopx-project-repositories)  »  [`Back to Top`](#table-of-contents)
+[`See All Technology Requirements`](#table-of-contents--technology-requirements)  »  [`See All Project Repositories`](#jsopx-project-git-hub-repositories)  »  [`Back to Top`](#table-of-contents)
 
 ---
 
@@ -2384,7 +2385,7 @@ The _Project References_ included in the **`JSopX.WebAPI`** Project are as follo
 Don't forget that the **`JSopX.WebAPI`** Project requires certain technologies installed to work as expected.
 
 [`JSopX`](https://github.com/JasonSilvestri/JSopX.OpenProjectX) [`Visual Studio`](#visual-studio) [`Asp.NET Core`](#aspnet-core) [`.NET Framework SDK`](#net-framework-sdk) [`C#`](#common-technologies-included)  » 
-[`All Technology Requirements`](#table-of-contents--technology-requirements)  »  [`All Project Repositories`](#jsopx-project-repositories)  »  [`Back to Top`](#table-of-contents)
+[`All Technology Requirements`](#table-of-contents--technology-requirements)  »  [`All Project Repositories`](#jsopx-project-git-hub-repositories)  »  [`Back to Top`](#table-of-contents)
 
 ---
 
@@ -2448,7 +2449,7 @@ The _Project References_ included in the **`JSopX.SharedResources`** Project are
 Don't forget that the **`JSopX.SharedResources`** Project requires certain technologies installed to work as expected.
 
 [`JSopX`](https://github.com/JasonSilvestri/JSopX.OpenProjectX) [`Bootstrap`](#common-technologies-included) [`HTML`](#common-technologies-included) [`CSS`](#common-technologies-included) [`JS`](#common-technologies-included) [`TypeScript`](#common-technologies-included) [`Visual Studio`](#visual-studio) [`Asp.NET Core`](#aspnet-core) [`.NET Framework SDK`](#net-framework-sdk) [`C#`](#common-technologies-included)  » 
-[`All Technology Requirements`](#table-of-contents--technology-requirements)  »  [`All Project Repositories`](#jsopx-project-repositories)  »  [`Back to Top`](#table-of-contents)
+[`All Technology Requirements`](#table-of-contents--technology-requirements)  »  [`All Project Repositories`](#jsopx-project-git-hub-repositories)  »  [`Back to Top`](#table-of-contents)
 
 ---
 
@@ -2513,7 +2514,7 @@ The _Project References_ included in the **`JSopX.RCLxProper`** Project are as f
 Don't forget that the **`JSopX.RCLxProper`** Project requires certain technologies installed to work as expected.
 
 [`JSopX`](https://github.com/JasonSilvestri/JSopX.OpenProjectX) [`Bootstrap`](#common-technologies-included) [`HTML`](#common-technologies-included) [`CSS`](#common-technologies-included) [`JS`](#common-technologies-included) [`TypeScript`](#common-technologies-included) [`Visual Studio`](#visual-studio) [`Asp.NET Core`](#aspnet-core) [`.NET Framework SDK`](#net-framework-sdk) [`C#`](#common-technologies-included)  » 
-[`All Technology Requirements`](#table-of-contents--technology-requirements)  »  [`All Project Repositories`](#jsopx-project-repositories)  »  [`Back to Top`](#table-of-contents)
+[`All Technology Requirements`](#table-of-contents--technology-requirements)  »  [`All Project Repositories`](#jsopx-project-git-hub-repositories)  »  [`Back to Top`](#table-of-contents)
 
 ---
 
@@ -2578,7 +2579,7 @@ The _Project References_ included in the **`JSopX.RCLxAssets`** Project are as f
 Don't forget that the **`JSopX.RCLxAssets`** Project requires certain technologies installed to work as expected.
 
 [`JSopX`](https://github.com/JasonSilvestri/JSopX.OpenProjectX) [`Bootstrap`](#common-technologies-included) [`HTML`](#common-technologies-included) [`CSS`](#common-technologies-included) [`JS`](#common-technologies-included) [`TypeScript`](#common-technologies-included) [`Visual Studio`](#visual-studio) [`Asp.NET Core`](#aspnet-core) [`.NET Framework SDK`](#net-framework-sdk) [`C#`](#common-technologies-included)  » 
-[`All Technology Requirements`](#table-of-contents--technology-requirements)  »  [`All Project Repositories`](#jsopx-project-repositories)  »  [`Back to Top`](#table-of-contents)
+[`All Technology Requirements`](#table-of-contents--technology-requirements)  »  [`All Project Repositories`](#jsopx-project-git-hub-repositories)  »  [`Back to Top`](#table-of-contents)
 
 ---
       
@@ -2642,7 +2643,7 @@ The _Project References_ included in the **`JSopX.RCLxComponents`** Project are 
 Don't forget that the **`JSopX.RCLxComponents`** Project requires certain technologies installed to work as expected.
 
 [`JSopX`](https://github.com/JasonSilvestri/JSopX.OpenProjectX) [`Bootstrap`](#common-technologies-included) [`HTML`](#common-technologies-included) [`CSS`](#common-technologies-included) [`JS`](#common-technologies-included) [`TypeScript`](#common-technologies-included) [`Visual Studio`](#visual-studio) [`Asp.NET Core`](#aspnet-core) [`.NET Framework SDK`](#net-framework-sdk) [`C#`](#common-technologies-included)  » 
-[`All Technology Requirements`](#table-of-contents--technology-requirements)  »  [`All Project Repositories`](#jsopx-project-repositories)  »  [`Back to Top`](#table-of-contents)
+[`All Technology Requirements`](#table-of-contents--technology-requirements)  »  [`All Project Repositories`](#jsopx-project-git-hub-repositories)  »  [`Back to Top`](#table-of-contents)
 
 ---
       
@@ -2721,7 +2722,7 @@ The _Project References_ included in the **`JSopX.AngularCore`** Project are as 
 Don't forget that the **`JSopX.AngularCore`** Project requires certain technologies installed to work as expected.
 
 [`JSopX`](https://github.com/JasonSilvestri/JSopX.OpenProjectX) [`Bootstrap`](#common-technologies-included) [`Visual Studio`](#visual-studio) [`Asp.NET Core`](#aspnet-core) [`.NET Framework SDK`](#net-framework-sdk) [`C#`](#common-technologies-included) [`Angular`](#angular-cli) [`NodeJS`](#node) [`HTML`](#common-technologies-included) [`CSS`](#common-technologies-included) [`JS`](#common-technologies-included) [`TypeScript`](#common-technologies-included) [`npm`](#npm)  » 
-[`All Technology Requirements`](#table-of-contents--technology-requirements)  »  [`All Project Repositories`](#jsopx-project-repositories)  »  [`Back to Top`](#table-of-contents)
+[`All Technology Requirements`](#table-of-contents--technology-requirements)  »  [`All Project Repositories`](#jsopx-project-git-hub-repositories)  »  [`Back to Top`](#table-of-contents)
 
 ---
 
@@ -2801,7 +2802,7 @@ The _Project References_ included in the **`JSopX.ReactCore`** Project are as fo
 Don't forget that the **`JSopX.ReactCore`** Project requires certain technologies installed to work as expected.
 
 [`JSopX`](https://github.com/JasonSilvestri/JSopX.OpenProjectX) [`Bootstrap`](#common-technologies-included) [`Visual Studio`](#visual-studio) [`Asp.NET Core`](#aspnet-core) [`.NET Framework SDK`](#net-framework-sdk) [`C#`](#common-technologies-included) [`React`](#react) [`NodeJS`](#node) [`HTML`](#common-technologies-included) [`CSS`](#common-technologies-included) [`JS`](#common-technologies-included) [`TypeScript`](#common-technologies-included) [`npm`](#npm)  » 
-[`All Technology Requirements`](#table-of-contents--technology-requirements)  »  [`All Project Repositories`](#jsopx-project-repositories)  »  [`Back to Top`](#table-of-contents)
+[`All Technology Requirements`](#table-of-contents--technology-requirements)  »  [`All Project Repositories`](#jsopx-project-git-hub-repositories)  »  [`Back to Top`](#table-of-contents)
 
 ---
 
@@ -2880,7 +2881,7 @@ The _Project References_ included in the **`JSopX.VueCore`** Project are as foll
 Don't forget that the **`JSopX.VueCore`** Project requires certain technologies installed to work as expected.
 
 [`JSopX`](https://github.com/JasonSilvestri/JSopX.OpenProjectX) [`Bootstrap`](#common-technologies-included) [`Visual Studio`](#visual-studio) [`Asp.NET Core`](#aspnet-core) [`.NET Framework SDK`](#net-framework-sdk) [`C#`](#common-technologies-included) [`Vue`](#vue) [`Vite`](#vite) [`NodeJS`](#node) [`HTML`](#common-technologies-included) [`CSS`](#common-technologies-included) [`JS`](#common-technologies-included) [`TypeScript`](#common-technologies-included) [`npm`](#npm)  » 
-[`All Technology Requirements`](#table-of-contents--technology-requirements)  »  [`All Project Repositories`](#jsopx-project-repositories)  »  [`Back to Top`](#table-of-contents)
+[`All Technology Requirements`](#table-of-contents--technology-requirements)  »  [`All Project Repositories`](#jsopx-project-git-hub-repositories)  »  [`Back to Top`](#table-of-contents)
 
 ---
 

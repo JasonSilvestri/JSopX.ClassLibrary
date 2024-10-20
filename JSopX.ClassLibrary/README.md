@@ -2891,7 +2891,7 @@ Don't forget that the **`JSopX.VueCore`** Project requires certain technologies 
 
 **`JSopX.AspNetCore.sln`**: The `JSopX.AspNetCore` Project (_JSopX™ Asp.NET Core Project_) is an ASP.NET Core application, providing a server side version of the client-side applications (i.e., `AngularCore`, `ReactCore`, etc.).
 
-#### Step by Step Instructions:: Installation
+#### Step by Step Instructions: Installation
 
 1. _Clone_ `JSopX.AspNetCore` Git Repository:
     ```powershell
@@ -2914,7 +2914,7 @@ Don't forget that the **`JSopX.VueCore`** Project requires certain technologies 
 
 **`JSopX.BlazorServerCore.sln`**: The `JSopX.BlazorServerCore` Project (_JSopX™ Blazor Server Core Project_) is a Blazor Server application, delivering interactive web applications with server-side rendering.
 
-#### Step by Step Instructions:: Installation
+#### Step by Step Instructions: Installation
 
 1. _Clone_ `JSopX.BlazorServerCore` Git Repository:
     ```powershell
@@ -2937,7 +2937,7 @@ Don't forget that the **`JSopX.VueCore`** Project requires certain technologies 
 **`JSopX.MauiHybridNetCore.sln`**: The `JSopX.MauiHybridNetCore` Project (_JSopX™ .NET MAUI Hybrid Project_) is a .NET MAUI hybrid application, combining native and web components for cross-platform mobile and desktop development.
 
 
-#### Step by Step Instructions:: Installation
+#### Step by Step Instructions: Installation
 
 1. _Clone_ `JSopX.MauiHybridNetCore` Git Repository:
     ```powershell
